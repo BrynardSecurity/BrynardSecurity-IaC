@@ -1,9 +1,18 @@
+===================
 BrynardSecurity IaC
 ===================
 
-Usage
------
-Run the following command:
-::
-make terraform cmd="<init|plan|apply>"
-.. code-block:: rst
+This IaC repository defines all current infrastructure for BrynardSecurity environments.
+
+Contents
+========
+
+..  toctree::
+    :maxdepth: 2
+
+    installation
+
+..  toctree::
+    :maxdepth: 2
+    
+    usage
