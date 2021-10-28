@@ -29,3 +29,5 @@ override.tf.json
 # example: *tfplan*
 
 docs/source/terraform/secret.auto.tfvars
+
+npm-debug.log
