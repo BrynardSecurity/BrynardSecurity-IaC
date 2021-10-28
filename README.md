@@ -1,6 +1,6 @@
 # Welcome to BrynardSecurity-IaC 👋
 ![Version](https://img.shields.io/badge/version-1.0.0--alpha.1-blue.svg?cacheSeconds=2592000)
-[![Documentation](https://img.shields.io/badge/documentation-yes-brightgreen.svg)](https://readthedocs.org/projects/BrynardSecurity-IaC)
+[![Documentation](https://img.shields.io/badge/documentation-yes-brightgreen.svg)](https://readthedocs.org/projects/brynardsecurity-iac/)
 [![Twitter: DevopsPleb](https://img.shields.io/twitter/follow/DevopsPleb.svg?style=social)](https://twitter.com/DevopsPleb)
 
 > Infrastructure as Code for BrynardSecurity environments and assets.
