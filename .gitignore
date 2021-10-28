@@ -31,3 +31,5 @@ override.tf.json
 docs/source/terraform/secret.auto.tfvars
 
 npm-debug.log
+
+.vscode/settings.json
