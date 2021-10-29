@@ -33,3 +33,13 @@ docs/source/terraform/secret.auto.tfvars
 npm-debug.log
 
 .vscode/settings.json
+
+source/terraform/global/vmware/remote.tf
+
+source/terraform/global/vmware/secret.auto.tfvars
+
+source/terraform/stage/vmware/services/k8/remote.tf
+
+source/terraform/stage/vmware/services/k8/secret.auto.tfvars
+
+source/terraform/terragrunt.hcl
