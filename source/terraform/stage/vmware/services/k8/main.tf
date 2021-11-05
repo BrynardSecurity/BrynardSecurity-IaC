@@ -23,6 +23,16 @@ variable "vsphere-server" {
     sensitive = true
 }
 
+variable "ssh-user" {
+    type = string
+    sensitive = true
+}
+
+variable "ssh-password" {
+    type = string
+    sensitive = true
+}
+
 variable "env" {
     default = "dev"
 }
@@ -58,17 +68,20 @@ module "rancher_dev" {
     }
 }
 
-data "terraform_remote_state""rancher_dev"{
-    backend = "remote"
-
-    config = {
-        organization = "TheBrynards"
-        workspaces = {
-            name = "vmware-dev"
-        }
+resource "null_resource" "rancher_dev" {
+    depends_on = [
+        module.rancher_dev[*].ip
+    ]
+    connection {
+        type = "ssh"
+        user = "${var.ssh-user}"
+        password = "${var.ssh-password}"
+        host = "${module.rancher_dev[*].ip}"
     }
-}
-
-resource "vm_ip" "rancher_dev" {
-    vm_ip = data.terraform_remote_state.rancher_dev.outputs.ip
+    provisioner "remote-exec"{
+        inline = [
+            "touch ~/hello_world",
+            "echo 'Hellow world!' > ~/hello_world"
+        ]
+    }
 }
