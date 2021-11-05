@@ -31,3 +31,23 @@ override.tf.json
 docs/source/terraform/secret.auto.tfvars
 
 npm-debug.log
+
+.vscode/settings.json
+
+source/packer/rancherOS/output/RancherOS-Linux.json
+
+source/packer/rancherOS/output/RancherOS-Linux.json.lock
+
+*.iso
+
+*.lock
+
+source/packer/vsphere.pkrvars.hcl
+
+source/terraform/global/vmware/secret.auto.tfvars
+
+source/terraform/stage/vmware/rancher/.terraform.lock.hcl
+
+source/terraform/stage/vmware/rancher/secret.auto.tfvars
+
+source/terraform/terragrunt.hcl
