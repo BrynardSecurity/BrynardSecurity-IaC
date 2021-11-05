@@ -43,3 +43,21 @@ source/terraform/stage/vmware/services/k8/remote.tf
 source/terraform/stage/vmware/services/k8/secret.auto.tfvars
 
 source/terraform/terragrunt.hcl
+
+source/terraform/stage/vmware/rancher/.terraform.lock.hcl
+
+source/packer/common.pkrvars.hcl
+
+source/packer/rancherOS/output/RancherOS-Linux.json
+
+source/packer/rancherOS/output/RancherOS-Linux.json.lock
+
+source/packer/rancherOS/packer_cache/
+
+source/packer/vsphere.pkrvars.hcl
+
+source/terraform/global/vmware/provider.tf
+
+source/terraform/stage/vmware/rancher/secret.auto.tfvars
+
+source/terraform/stage/vmware/services/k8/main-copy.tf
